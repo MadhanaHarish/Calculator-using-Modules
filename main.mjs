@@ -1,4 +1,4 @@
-import {Addition} from "./Addition";
+import {Addition, Subtraction, Divide, Multiply} from "./Addition.mjs";
 
 
 class Main {
@@ -66,13 +66,13 @@ class Main {
     display() {
         this.equal = 1;
         switch (this.operator) {
-            case '+' : this.currentValue = Addition();
+            case '+' : this.currentValue = Addition(JSON.parse(this.prevValue), JSON.parse(this.currentValue));
                 break;
-            case '-' : this.currentValue = JSON.parse(this.prevValue) - JSON.parse(this.currentValue);
+            case '-' : this.currentValue = Subtraction(JSON.parse(this.prevValue), JSON.parse(this.currentValue));
                 break;
-            case '*' : this.currentValue = JSON.parse(this.currentValue) * JSON.parse(this.prevValue);
+            case '*' : this.currentValue = Multiply(JSON.parse(this.prevValue), JSON.parse(this.currentValue));
                 break;
-            case '÷' : this.currentValue = JSON.parse(this.prevValue) / JSON.parse(this.currentValue);
+            case '÷' : this.currentValue = Divide(JSON.parse(this.prevValue), JSON.parse(this.currentValue));
                 break;
             default : return;
         }

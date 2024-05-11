@@ -66,6 +66,7 @@ body {
   /* 1 */
   line-height: inherit;
   /* 2 */
+  background-image: url("https://img.freepik.com/free-vector/science-doodle-pattern_23-2147492328.jpg?1&w=740&t=st=1715453316~exp=1715453916~hmac=d422e63b124c0cb138cd953e300375ab07743624bf92b4a4fb62467556198b48");
 }
 
 /*
@@ -681,6 +682,11 @@ video {
 .border-gray-200 {
   --tw-border-opacity: 1;
   border-color: rgb(229 231 235 / var(--tw-border-opacity));
+}
+
+.bg-orange-600 {
+  --tw-border-opacity: 1;
+  background-color:rgb(234 88 12);
 }
 
 .bg-blue-700 {
