@@ -66,7 +66,7 @@ body {
   /* 1 */
   line-height: inherit;
   /* 2 */
-  background-image: url("https://img.freepik.com/free-vector/science-doodle-pattern_23-2147492328.jpg?1&w=740&t=st=1715453316~exp=1715453916~hmac=d422e63b124c0cb138cd953e300375ab07743624bf92b4a4fb62467556198b48");
+  background-image: url("https://img.freepik.com/free-vector/science-doodle-pattern_23-2147492328.jpg?1&w=740&t=st=1715484714~exp=1715485314~hmac=9a14e1efa636947ea643583788075ad4b9cc7f96cf5007d9a77b5937bed8021e");
 }
 
 /*
@@ -563,18 +563,6 @@ video {
   grid-column: span 6 / span 6;
 }
 
-.m-0 {
-  margin: 0px;
-}
-
-.m-0\.5 {
-  margin: 0.125rem;
-}
-
-.m-1 {
-  margin: 0.25rem;
-}
-
 .mt-0 {
   margin-top: 0px;
 }
@@ -583,19 +571,8 @@ video {
   margin-top: 0.125rem;
 }
 
-.mt-2 {
-  margin-top: 0.5rem;
-}
-
 .mt-1 {
   margin-top: 0.25rem;
-}
-
-.line-clamp-6 {
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 6;
 }
 
 .grid {
@@ -610,36 +587,8 @@ video {
   height: auto;
 }
 
-.h-20 {
-  height: 5rem;
-}
-
-.h-12 {
-  height: 3rem;
-}
-
-.h-8 {
-  height: 2rem;
-}
-
-.h-4 {
-  height: 1rem;
-}
-
-.min-h-8 {
-  min-height: 2rem;
-}
-
-.min-h-4 {
-  min-height: 1rem;
-}
-
 .min-h-10 {
   min-height: 2.5rem;
-}
-
-.min-h-5 {
-  min-height: 1.25rem;
 }
 
 .min-h-6 {
@@ -651,20 +600,12 @@ video {
        columns: 12;
 }
 
-.grid-cols-4 {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.grid-cols-1 {
-  grid-template-columns: repeat(1, minmax(0, 1fr));
-}
-
 .grid-cols-12 {
   grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .gap-0 {
@@ -684,11 +625,6 @@ video {
   border-color: rgb(229 231 235 / var(--tw-border-opacity));
 }
 
-.bg-orange-600 {
-  --tw-border-opacity: 1;
-  background-color:rgb(234 88 12);
-}
-
 .bg-blue-700 {
   --tw-bg-opacity: 1;
   background-color: rgb(29 78 216 / var(--tw-bg-opacity));
@@ -699,28 +635,18 @@ video {
   background-color: rgb(17 24 39 / var(--tw-bg-opacity));
 }
 
+.bg-orange-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(234 88 12 / var(--tw-bg-opacity));
+}
+
 .bg-yellow-400 {
   --tw-bg-opacity: 1;
   background-color: rgb(250 204 21 / var(--tw-bg-opacity));
 }
 
-.bg-gray-700 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
-}
-
-.bg-gray-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
-}
-
 .p-1 {
   padding: 0.25rem;
-}
-
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
 }
 
 .text-3xl {

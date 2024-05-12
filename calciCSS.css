@@ -7,11 +7,13 @@
     justify-content: center;
     align-content: center;
     min-height: 100vh;
-}
-
-.calciDisplay {
     width: 300px;
 }
+
+.backgroundImage {
+    background-image: url("https://img.freepik.com/free-vector/science-doodle-pattern_23-2147492328.jpg?1&w=740&t=st=1715484714~exp=1715485314~hmac=9a14e1efa636947ea643583788075ad4b9cc7f96cf5007d9a77b5937bed8021e");
+}
+
 
 .firstInput {
     display: flex;

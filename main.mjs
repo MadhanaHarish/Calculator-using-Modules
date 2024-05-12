@@ -18,7 +18,6 @@ class Main {
     }
 
     appendOperator(operator) {
-        this.operator = operator.toString();
         if(this.currentValue != '' && this.prevValue != '') {
             switch (this.operator) {
                 case '+' : this.prevValue = JSON.parse(this.currentValue) + JSON.parse(this.prevValue);
@@ -34,12 +33,14 @@ class Main {
             this.firstValue.innerHTML = this.prevValue.toString() + ' ' + this.operator;
             this.secondValue.innerHTML = '';
             this.currentValue = '';
+            this.operator = operator.toString();
 
         }
         else if (this.currentValue === '' && this.prevValue === '') {
             return;
         }
         else {
+            this.operator = operator.toString();
             this.firstValue.innerHTML = this.currentValue + ' ' + this.operator;
             this.prevValue = this.currentValue;
             this.secondValue.innerHTML = '';
@@ -63,8 +64,7 @@ class Main {
         }
     }
 
-    display() {
-        this.equal = 1;
+    compute() {
         switch (this.operator) {
             case '+' : this.currentValue = Addition(JSON.parse(this.prevValue), JSON.parse(this.currentValue));
                 break;
@@ -76,6 +76,11 @@ class Main {
                 break;
             default : return;
         }
+    }
+
+    display() {
+        this.equal = 1;
+        this.compute();
         this.secondValue.innerHTML = this.currentValue.toString();
         this.firstValue.innerHTML = '';
         this.prevValue = '';
