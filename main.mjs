@@ -85,6 +85,13 @@ class Main {
         this.firstValue.innerHTML = '';
         this.prevValue = '';
     }
+
+    delLastEle() {
+        if(this.currentValue === '') return
+        this.currentValue = this.currentValue.toString().slice(0,-1);
+        this.secondValue.innerHTML = this.currentValue;
+    }
+
 }
 
 
@@ -94,6 +101,7 @@ let dataNumberButton = document.querySelectorAll('[dataNumber]');
 let dataOperatorButton = document.querySelectorAll('[dataOperator]');
 let dataEqualsButton = document.querySelector('[dataEquals]');
 let allClear = document.querySelector('[allClear]')
+let del = document.querySelector(('[delete]'));
 
 let main = new Main(firstValue, secondValue);
 dataNumberButton.forEach(button => {
@@ -116,4 +124,8 @@ dataEqualsButton.addEventListener('click', () => {
 
 allClear.addEventListener('click', () => {
     main.clear();
+}, false);
+
+del.addEventListener('click', () => {
+    main.delLastEle();
 }, false);
